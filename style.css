@@ -1,0 +1,192 @@
+/* Add the Google Fonts you want, remove the ones you don't. 
+
+███████  ██████  ███    ██ ████████ ███████ 
+██      ██    ██ ████   ██    ██    ██      
+█████   ██    ██ ██ ██  ██    ██    ███████ 
+██      ██    ██ ██  ██ ██    ██         ██ 
+██       ██████  ██   ████    ██    ███████ 
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+/*
+
+X-Small devices (portrait phones, less than 576px) 
+No media query for `xs` since this is the default in Bootstrap 
+
+███    ███  ██████  ██████  ██ ██      ███████     ███████ ██ ██████  ███████ ████████ 
+████  ████ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██ ██         ██    
+██ ████ ██ ██    ██ ██████  ██ ██      █████       █████   ██ ██████  ███████    ██    
+██  ██  ██ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██      ██    ██    
+██      ██  ██████  ██████  ██ ███████ ███████     ██      ██ ██   ██ ███████    ██    
+                                                                                       
+*/
+
+/* Add Border Box and Smooth Scroll */
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: url("up.png"), auto !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Use variable for to easily change your theme's colour scheme and typography.
+
+██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
+██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
+██    ██ ███████ ██████  ██ ███████ ██████  ██      █████   ███████ 
+ ██  ██  ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██           ██ 
+  ████   ██   ██ ██   ██ ██ ██   ██ ██████  ███████ ███████ ███████ 
+                                                                    
+*/
+
+:root {
+  --primary-text-color: #222;
+  --body-typeface: 'Space Grotesk', sans-serif;
+  --background-color: rgb(255, 226, 226);
+}
+
+
+body {
+  font-family: var(--body-typeface);
+  color: var(--primary-text-color);
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgb(255, 186, 220);
+}
+
+/* Making all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  /* Removes the gap/space in inline elements for text descenders. */
+  object-fit: contain;
+  /* This is optional. Also try cover or leave out entirely. */
+
+}
+
+
+
+/* Global & Mobile Typography 
+
+████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
+   ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██  
+   ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████   
+   ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██    
+   ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██    
+                                                                                     
+*/
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+/* Hyperlink Styles */
+a {}
+
+a:hover,
+a:active {}
+
+
+p {}
+
+
+
+/* Work Page Layout
+
+██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
+██     ██ ██    ██ ██   ██ ██  ██      ██   ██ ██   ██ ██       ██      
+██  █  ██ ██    ██ ██████  █████       ██████  ███████ ██   ███ █████   
+██ ███ ██ ██    ██ ██   ██ ██  ██      ██      ██   ██ ██    ██ ██      
+ ███ ███   ██████  ██   ██ ██   ██     ██      ██   ██  ██████  ███████ 
+
+*/
+
+
+
+
+
+
+
+/* Hero 
+
+██   ██ ███████ ██████   ██████  
+██   ██ ██      ██   ██ ██    ██ 
+███████ █████   ██████  ██    ██ 
+██   ██ ██      ██   ██ ██    ██ 
+██   ██ ███████ ██   ██  ██████  
+                                 
+*/
+
+
+
+
+/* Global Footer
+
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ 
+                                                   
+*/
+
+
+
+/* Project Page 
+
+██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
+██   ██ ██   ██ ██    ██      ██ ██      ██         ██        ██   ██ ██   ██ ██       ██      
+██████  ██████  ██    ██      ██ █████   ██         ██        ██████  ███████ ██   ███ █████   
+██      ██   ██ ██    ██ ██   ██ ██      ██         ██        ██      ██   ██ ██    ██ ██      
+██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
+                                                                                               
+*/
+
+
+
+
+
+
+/*
+
+
+███╗   ███╗███████╗██████╗ ██╗ █████╗ 
+████╗ ████║██╔════╝██╔══██╗██║██╔══██╗
+██╔████╔██║█████╗  ██║  ██║██║███████║
+██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║
+██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║
+╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝
+                                                                               
+                                           
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
