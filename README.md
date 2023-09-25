@@ -1,4 +1,4 @@
-# boilerplate-2022
+# boilerplate
 ## The most basic boilerplate for modern portfolios
  
 Just the bare bones
