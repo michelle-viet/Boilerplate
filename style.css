@@ -49,6 +49,7 @@ html {
 
 :root {
   --primary-text-color: #131312;
+  --secondary-text-color: #fff;
   --body-typeface: 'Manrope', sans-serif;
   --background-color: rgb(255, 255, 255);
   --accent-color: rgb(18, 118, 152);
@@ -105,21 +106,21 @@ h1 {}
 
 h2 {}
   .label-bold{
-    font-size: 2.5rem;
+    font-size: 2rem;
       font-weight: 700;
   }
 .label{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h3 {}
   .smlabel-bold{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 700;
   }
   .smlabel{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
 
@@ -169,7 +170,15 @@ p {}
                                  
 */
 
-
+.nav-item{
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-bottom: 3vh;
+  
+}
+.navigation-vertical-container{
+  margin-top: 10vh;
+}
 
 
 /* 
@@ -187,10 +196,34 @@ p {}
 
 .about-page {
   background: var(--accent-color);
-  min-height: 100vh;
 
 }
+.about-content{
+  display: flex;
+  flex-direction: row;
+  margin: 0vh 10vh;
+}
 
+.about-text{
+  margin-top: 10vh;
+}
+.street-cred{
+  margin-top: 10vh;
+}
+
+.experience{
+  margin-top: 4vh;
+  line-height:24pt;
+}
+
+.nice-things{
+  margin-top: 5vh;
+  line-height:24pt;
+}
+
+.bio{
+  line-height:30pt;
+}
 
 /* Global Footer
 
@@ -206,6 +239,10 @@ p {}
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-bottom: 5vh;
 }
 .social-media-list{
   display: flex;
