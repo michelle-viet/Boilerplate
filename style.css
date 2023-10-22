@@ -115,6 +115,11 @@ h2 {}
   font-weight: 400;
 }
 
+.medlabel{
+font-size: 1.5rem;
+font-weight: 400;
+}
+
 h3 {}
   .smlabel-bold{
     font-size: 1.2rem;
@@ -139,7 +144,7 @@ p {}
   font-size: 1.25rem;
 }
 .smbody{
-  font-size: 1.08rem;
+  font-size: 1rem;
 
 }
 
@@ -155,8 +160,18 @@ p {}
 
 */
 
+.thumbnail{
+  background-color: aquamarine;
+}
 
-
+.work-card{
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
 
 
 
@@ -274,7 +289,6 @@ color: rgb(255, 255, 255);
 
 
 /*
-
 
 ███╗   ███╗███████╗██████╗ ██╗ █████╗ 
 ████╗ ████║██╔════╝██╔══██╗██║██╔══██╗
