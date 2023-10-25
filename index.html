@@ -10,17 +10,37 @@
   <meta property="og:image" content="screenshot.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/bd0a9b4500.js" crossorigin="anonymous"></script>
+  <script src="interaction.js"></script>
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<section class="home-logo-content">
-  <img class="logo" src="images/logo/mv-logo-1.svg" alt="michelle-logo" href="index.html">
-<h3 class="smlabel">UX and product designer keen to do good and design even “gooder” <br>Prev @ SAP and Railyard Labs</h3>
-</section>
+  <header class="header">
+    <a href="michelleviet.com">
+    <div class="logo-container" onmouseover="changeLogo(this)" onmouseout="resetLogo(this)">
+      <img class="default-logo" id="logo" src="images/logo/logo-core-black.svg" alt="Logo">
+  </div>
+</a>
 
+<div class="navigation-container">
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+<ul class="nav">
+        <li class="nav-item"><a class="nav-link selected" href="#">work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">resume</a></li>
+    </ul>
+  </div>  
+</header>
+
+<div class="hero">
+  <h1 class="title">UX and product designer keen to do good and design even “gooder”.<br>
+    Prev @ SAP and Railyard Labs</h1>
+</div>
+<!-- Creating digital stories that make you smile, and sometimes even LOL. -->
 <section class="work-items">
+
 <div class="work-card"> 
   <div class="thumbnail"><img src="images" alt="playland"></div>
   <div class="card-description">
@@ -28,6 +48,15 @@
     <h2 class="smlabel">Helping homemakers manage the mental load</h2>
     <p class="smbody">#case study #product & brand design</p>
      </div>
+
+     <div class="card-container">
+      <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Image">
+          <div class="card-content">
+              <h2>Card Title 1</h2>
+              <p>Description 1</p>
+          </div>
+      </div>
 
 <div class="work-card"> 
 <div class="thumbnail"><img src="images" alt="playland"></div>
@@ -59,14 +88,6 @@
 
 </div>
 </section>
-
-<div class="navigation-vertical-container">
-  <ul class="navigation-vertical">
-  <li class="nav-item"><a href="#">work</a></li>
-  <li class="nav-item"><a href="#">about</a></li>
-  <li class="nav-item"><a href="#">play</a></li>
-  <li class="nav-item"><a href="#">resume</a></li>
-  </ul></div>
 
 
 
