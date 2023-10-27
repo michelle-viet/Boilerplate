@@ -5,29 +5,34 @@
 // ███████  ██████   ██████   ██████       ██████ ██   ██ ██   ██ ██   ████  ██████  ███████ (black)
                                                                                           
 
-const images = ['images/logo/logo2-black.svg', 'images/logo/logo3-black.svg', 'images/logo/logo4-black.svg', 'images/logo/logo5-black.svg', 'images/logo/logo7-black.svg', 'images/logo/logo8-black.svg', 'images/logo/logo9-black.svg']; // Add the paths to your images
-let currentIndex = 0;
+// const images = ['logo-core-black.png', 'logo3-black.png', 'logo4-black.png', 'logo5-black.png', 'logo6-black.png', 'logo7-black.png', 'logo8-black.png', 'logo9-black.png', 'logo10-black.png', 'logo11-black.png', 'logo12-black.png', 'logo13-black.png']; 
+// let currentIndex = 0;
 
-function changeLogo(element) {
-    const logo = element.querySelector('#logo');
-    currentIndex = (currentIndex + 1) % images.length;
-    logo.src = images[currentIndex];
-}
+// function changeLogo(element) {
+//     const logo = element.querySelector('#logo');
+//     currentIndex = (currentIndex + 1) % images.length;
+//     logo.src = images[currentIndex];
+// }
 
-function resetLogo(element) {
-    const logo = element.querySelector('#logo');
-    logo.src = 'images/logo/logo-core-black.svg';
-}
+// function resetLogo(element) {
+//     const logo = element.querySelector('#logo');
+//     logo.src = 'images/logo/logo-core-black.png';
+// }
+
 
 // const logo = document.getElementById('logo');
-// const logoVariations = ['https://picsum.photos/500/300/?image=17', 'https://picsum.photos/500/300/?image=18', 'https://picsum.photos/500/300/?image=19', 'https://picsum.photos/500/300/?image=16', 'https://picsum.photos/500/300/?image=15', 'https://picsum.photos/500/300/?image=14', 'https://picsum.photos/500/300/?image=11', 'https://picsum.photos/500/300/?image=12'];
+// const logoVariations = ['https://picsum.photos/500/300/?image=11', 'https://picsum.photos/500/300/?image=12', 'https://picsum.photos/500/300/?image=13', 'https://picsum.photos/500/300/?image=14', 'https://picsum.photos/500/300/?image=15', 'https://picsum.photos/500/300/?image=16', 'https://picsum.photos/500/300/?image=18', 'https://picsum.photos/500/300/?image=19'];
 // let currentIndex = 0;
 
 // logo.addEventListener('mouseover', () => {
-//     currentIndex = (currentIndex + 1) % logoVariations.length;
+//     let randomIndex;
+//     do {
+//         randomIndex = Math.floor(Math.random() * logoVariations.length);
+//     } while (randomIndex === currentIndex); // Ensure no repeats
+
+//     currentIndex = randomIndex;
 //     logo.src = logoVariations[currentIndex];
 // });
-
 
 
 

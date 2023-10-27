@@ -52,8 +52,7 @@ html {
   --primary-text-color: #131312;
   --secondary-text-color: #fff;
   --body-typeface: 'Manrope', sans-serif;
-  --background-color: rgb(255, 255, 255);
-  --accent-color: rgb(18, 118, 152);
+  --background-color: #FFFFF9;
   
 }
 
@@ -152,7 +151,48 @@ p {}
   font-size: 1rem;
 
 }
+/* 
+playground
+██████  ██       █████  ██    ██  ██████  ██████   ██████       ██ ███    ██ ██████  
+██   ██ ██      ██   ██  ██  ██  ██       ██   ██ ██    ██      ██ ████   ██ ██   ██ 
+██████  ██      ███████   ████   ██   ███ ██████  ██    ██      ██ ██ ██  ██ ██   ██ 
+██      ██      ██   ██    ██    ██    ██ ██   ██ ██    ██ ██   ██ ██  ██ ██ ██   ██ 
+██      ███████ ██   ██    ██     ██████  ██   ██  ██████   █████  ██   ████ ██████  
+   /                                                                                   */
 
+   .play-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .play-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    
+    }
+
+  
+    .play-card img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s;
+      border-radius: 1rem;
+      margin-top: 4rem;
+      
+    }
+    
+    .play-card:hover img {
+      transform: translateY(-4px);
+    }
+    
+  
+   
 
 
 /* Work Page Layout
@@ -174,15 +214,16 @@ p {}
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  gap: 10px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
 }
 
 .card {
   position: relative;
-    width: calc(50% - 10px); /* 50% width with 10px gap between images */
+    width: calc(50% - 30px); /* 50% width with 20px gap between images */
     margin-bottom: 20px;
 
     @media (max-width: 700px) {
@@ -196,6 +237,7 @@ p {}
   display: block;
   transition: transform 0.3s;
   border-radius: 1rem;
+  
 }
 
 .card:hover img {
@@ -207,9 +249,13 @@ p {}
   margin: 10px 0;  
 }
 .caption{
-  padding-top: 2rem;
-  
+  padding-top: 0.5rem;
+  line-height: 2rem;
 
+}
+.caption p{
+  color: #5C5C5C;
+  text-decoration: none;
 }
 
 
@@ -309,13 +355,17 @@ margin-top: 1vh;
 
 
 .about-page {
-  background: var(--accent-color);
+  /* background: white; */
 
 }
 .about-content{
   display: flex;
   flex-direction: row;
   margin: 0vh 10vh;
+
+  @media (max-width: 700px){
+    flex-direction: column;
+}
 }
 
 .about-text{
@@ -354,13 +404,23 @@ margin-top: 1vh;
   align-items: center;
   justify-content: space-between;
   margin-top: auto;
-  margin-left: 10vh;
-  margin-right: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
   margin-bottom: 5vh;
+  padding-top: 5vh; 
+  border-top: solid;
+  border-color: #C1C1C1;
+  border-width: 0.5px;
+
+  @media (max-width: 700px){
+    flex-direction: column;
 }
+}
+
 .social-media-list{
   display: flex;
   flex-direction: row;
+  padding-top: 1rem;
 }
 .social-media-icon{
   padding: 0.25rem;
@@ -408,7 +468,7 @@ color: rgb(0, 0, 0);
     .nav {
         display: none;
         flex-direction: column;
-        background-color: #ffffff;
+        /* background-color: #ffffff; */
         position: absolute;
         top: 15vh;
         left: 0;
@@ -463,13 +523,11 @@ color: rgb(0, 0, 0);
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
-body {background: rgb(255, 255, 255);}
 
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1920px) {
 
-  body {background: rgb(255, 255, 255);}
   
   }

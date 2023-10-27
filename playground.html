@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Michelle Viet | Portfolio </title>
+  <meta name="description"
+    content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="screenshot.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src="https://kit.fontawesome.com/bd0a9b4500.js" crossorigin="anonymous"></script>
+  <script src="interaction.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    
+    <div class="logo-container" onmouseover="changeLogo(this)" onmouseout="resetLogo(this)">
+      <a href="michelleviet.com">
+      <img class="default-logo" id="logo" src="images/logo/logo-core-black.png" alt="Logo">
+    </a>
+  </div>
+
+  <!-- <div class="logo-container">
+    <img id="logo" src="images/logo/logo-core-black2.png" alt="Logo">
+</div> -->
+
+
+<div class="navigation-container">
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+<ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">work</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+        <li class="nav-item"><a class="nav-link selected" href="playground.html">playground</a></li>
+        <li class="nav-item"><a class="nav-link" href="MichelleViet_Resume2024.pdf" target="_blank">resume</a></li>
+    </ul>
+  </div>  
+</header>
+
+<div class="hero">
+  <h2 class="label">unleashing my curiosities and discovering my diverse design experiments in this creative playground</h2>
+</div>
+<!-- Creating digital stories that make you smile, and sometimes even LOL. -->
+
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">all</button>
+    <button class="btn" onclick="filterSelection('cars')">interactive</button>
+    <button class="btn" onclick="filterSelection('animals')">motion</button>
+    <button class="btn" onclick="filterSelection('fruits')">illustration</button>
+    <button class="btn" onclick="filterSelection('colors')">branding</button>
+  </div>
+
+<section class="play-items">
+
+  <div class="play-container">
+  
+    <!-- Chirpit -->
+    <div class="play-card"><a href="proj-capstone.html">
+        <img src="images/coming-soon.png" alt="Image 1">
+        <div class="caption">
+          <h2 class="smlabel-bold">Chirpit cricket flour pasta</h2>
+          <p class="smbody">branding / motion / packaging design</p></div>
+        </a></div>
+
+
+<!-- Pelican -->
+<div class="play-card"><a href="proj-nomu.html">
+  <img src="images/coming-soon.png" alt="Image 1">
+  <div class="caption"><h2 class="smlabel-bold">Nomu</h2>
+    <p class="smbody">case study / service & product design</p></div>
+  </a></div>
+
+<!-- Playland -->
+<div class="play-card"><a href="proj-playland.html">
+  <img src="images/coming-soon.png" alt="Image 1">
+  <div class="caption"><h2 class="smlabel-bold">Making amusement park experiences less unbearable</h2>
+    <p class="smbody">case study / product design</p></div>
+  </a></div>
+
+<!-- Swingporium -->
+<div class="play-card"><a href="proj-sap.html">
+  <img src="images/coming-soon.png" alt="Image 1">
+  <div class="caption"><h2 class="smlabel-bold">Design @ SAP </h2>
+    <p class="smbody">ar/vr / branding / illustration</p></div>
+  </a></div>
+
+<!-- Swingporium -->
+<div class="play-card"><a href="proj-swingporium.html">
+  <img src="images/coming-soon.png" alt="Image 1">
+  <div class="caption"><h2 class="smlabel-bold">Electro Swing Music Festival</h2>
+    <p class="smbody">ar experience / brand design</p></div>
+  </a></div>
+
+</div> 
+</section>
+
+<footer class="footer">
+  <p>© Michelle Viet 2023</p>
+      
+  <ul class="social-media-list">
+  <li class="social-media-icon"><a href="mailto:michelleviet01@gmail.com" target="_blank" class="social-media-icon-link"><i class="fa-solid fa-envelope"></i></a></li>
+  <li class="social-media-icon"><a href="https://www.linkedin.com/in/michelle-viet/" target="_blank" class="social-media-icon-link"><i class="fa-brands fa-linkedin"></i></a></li>
+  <li class="social-media-icon"><a href="https://www.behance.net/michelleviet" target="_blank" class="social-media-icon-link"><i class="fa-brands fa-square-behance"></i></a></li>
+  <li class="social-media-icon"><a href="https://www.instagram.com/michelleviet/" target="_blank" class="social-media-icon-link"><i class="fa-brands fa-square-instagram"></i></a></li>
+  </ul>
+</footer>
+
+</body>
+
+
+
+</html>
