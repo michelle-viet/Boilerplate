@@ -531,3 +531,42 @@ color: rgb(0, 0, 0);
 
   
   }
+
+
+  /* playground Page Layout
+
+██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
+██     ██ ██    ██ ██   ██ ██  ██      ██   ██ ██   ██ ██       ██      
+██  █  ██ ██    ██ ██████  █████       ██████  ███████ ██   ███ █████   
+██ ███ ██ ██    ██ ██   ██ ██  ██      ██      ██   ██ ██    ██ ██      
+ ███ ███   ██████  ██   ██ ██   ██     ██      ██   ██  ██████  ███████ 
+
+*/
+
+.work-wrapper {
+  flex: 1;
+  background-color: #F2FCD2;
+}
+
+/* Padding around work grid and project page */
+.portfolio, .project-wrapper {
+  padding: .25rem
+}
+
+/* Defining the work page grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+}
+
+
+
+
+/* Optional – Sizing the work page images */
+/* figure {
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+} */
