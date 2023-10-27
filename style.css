@@ -137,6 +137,11 @@ a {}
 
 a:hover,
 a:active {}
+a:visited{
+  color: black;}
+a:link{
+  color: black;
+}
 
 
 p {}
@@ -190,6 +195,7 @@ p {}
   height: auto;
   display: block;
   transition: transform 0.3s;
+  border-radius: 1rem;
 }
 
 .card:hover img {
@@ -198,8 +204,15 @@ p {}
 
 .card p {
   text-align: left;
-  margin: 10px 0;
+  margin: 10px 0;  
 }
+.caption{
+  padding-top: 2rem;
+  
+
+}
+
+
 /* Hero 
 ██   ██ ███████ ██████   ██████  
 ██   ██ ██      ██   ██ ██    ██ 
