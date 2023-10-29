@@ -310,6 +310,7 @@ margin-top: 1vh;
   border-top: solid;
   border-color: #C1C1C1;
   border-width: 0.5px;
+  background-color: #FFFFF9;
 
 }
  ul.nav-menu {
@@ -403,7 +404,7 @@ margin-top: 1vh;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: auto;
+  margin-top: 5vh;
   padding-left: 10vh;
   padding-right: 10vh;
   margin-bottom: 5vh;
