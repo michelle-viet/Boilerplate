@@ -8,7 +8,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="screenshot.jpg">
-  <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/bd0a9b4500.js" crossorigin="anonymous"></script>
   <script src="interaction.js"></script>
@@ -33,60 +32,74 @@
 <div class="navigation-container">
   <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
 <ul class="nav">
-        <li class="nav-item"><a class="nav-link selected" href="index.html">work</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">work</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
-        <li class="nav-item"><a class="nav-link" href="playground.html">playground</a></li>
+        <li class="nav-item"><a class="nav-link selected" href="playground.html">playground</a></li>
         <li class="nav-item"><a class="nav-link" href="MichelleViet_Resume2024.pdf" target="_blank">resume</a></li>
     </ul>
   </div>  
 </header>
 
-<div class="hero">
-  <h1>UX and product designer keen to do good and design even “gooder”.<br>
-    Prev @ SAP and Railyard Labs</h1>
+<div class="play-hero">
+  <h2 class="label">here i unleash my curiosities and play with design 🛝</h2>
 </div>
 <!-- Creating digital stories that make you smile, and sometimes even LOL. -->
 
-<section class="playground-items">
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">all</button>
+    <button class="btn" onclick="filterSelection('cars')">interactive</button>
+    <button class="btn" onclick="filterSelection('animals')">motion</button>
+    <button class="btn" onclick="filterSelection('fruits')">illustration</button>
+    <button class="btn" onclick="filterSelection('colors')">branding</button>
+  </div>
 
-  <div class="cards-container">
+<section class="play-items">
+
+  <div class="play-container">
   
-    <!-- Capstone -->
-    <div class="card"><a href="proj-capstone.html">
+<!-- Swingporium -->
+<div class="play-card"><a href="proj-playland.html">
+    <img src="images/coming-soon.png" alt="Image 1">
+    <div class="caption"><h2 class="smlabel-bold">swingporium - electro swing music festival</h2>
+      <p class="smbody">augmented reality (ar) / branding / illustration</p></div>
+    </a></div>
+
+    <!-- Chirpit -->
+    <div class="play-card"><a href="proj-capstone.html">
         <img src="images/coming-soon.png" alt="Image 1">
         <div class="caption">
-          <h2 class="smlabel-bold">Helping homemakers manage the mental load</h2>
-          <p class="smbody">case study / brand & product design</p></div>
+          <h2 class="smlabel-bold">chirpit cricket flour pasta</h2>
+          <p class="smbody">branding / motion / packaging design</p></div>
         </a></div>
 
 
-<!-- Nomu -->
-<div class="card"><a href="proj-nomu.html">
+<!-- Pelican -->
+<div class="play-card"><a href="proj-nomu.html">
   <img src="images/coming-soon.png" alt="Image 1">
-  <div class="caption"><h2 class="smlabel-bold">Nomu</h2>
+  <div class="caption"><h2 class="smlabel-bold">pelican</h2>
     <p class="smbody">case study / service & product design</p></div>
   </a></div>
 
-<!-- Playland -->
-<div class="card"><a href="proj-playland.html">
+<!-- 100 -->
+<div class="play-card"><a href="proj-sap.html">
   <img src="images/coming-soon.png" alt="Image 1">
-  <div class="caption"><h2 class="smlabel-bold">Making amusement park experiences less unbearable</h2>
-    <p class="smbody">case study / product design</p></div>
+  <div class="caption"><h2 class="smlabel-bold">100 annoying little things </h2>
+    <p class="smbody">ar/vr / branding / illustration</p></div>
   </a></div>
 
-<!-- SAP -->
-<div class="card"><a href="proj-sap.html">
+<!-- BOOO covid -->
+<div class="play-card"><a href="proj-swingporium.html">
   <img src="images/coming-soon.png" alt="Image 1">
-  <div class="caption"><h2 class="smlabel-bold">Design @ SAP </h2>
-    <p class="smbody">overview / internship / ux design</p></div>
-  </a></div>
-
-<!-- Swingporium
-<div class="card"><a href="proj-swingporium.html">
-  <img src="images/coming-soon.png" alt="Image 1">
-  <div class="caption"><h2 class="smlabel-bold">Electro Swing Music Festival</h2>
+  <div class="caption"><h2 class="smlabel-bold">covid illustration</h2>
     <p class="smbody">ar experience / brand design</p></div>
-  </a></div> -->
+  </a></div>
+
+  <!-- Living oCeans  -->
+<div class="play-card"><a href="proj-swingporium.html">
+    <img src="images/coming-soon.png" alt="Image 1">
+    <div class="caption"><h2 class="smlabel-bold">living oceans website interactions</h2>
+      <p class="smbody">ar experience / brand design</p></div>
+    </a></div>
 
 </div> 
 </section>
