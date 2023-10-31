@@ -140,6 +140,7 @@ a:visited{
   color: black;}
 a:link{
   color: black;
+  text-decoration: none;
 }
 
 
@@ -426,7 +427,7 @@ margin-top: 1vh;
   flex-direction: row;
   margin: 0vh 10vh;
 
-  @media (max-width: 700px){
+  @media (max-width: 892px){
     flex-direction: column;
 }
 }
@@ -443,13 +444,17 @@ margin-top: 1vh;
   line-height:24pt;
 }
 
+.link-underline{
+  text-decoration: underline;
+}
+
 .nice-things{
   margin-top: 5vh;
   line-height:24pt;
 }
 
 .bio{
-  line-height:30pt;
+  line-height:40pt;
 }
 
 /* Global Footer
@@ -473,7 +478,7 @@ padding-top: 2vh;
   @media (max-width: 700px){
     align-items:center;
     text-align: center;}
-    line-height: 4vh;
+    line-height: 5vh;
 }
 
 .footer{
