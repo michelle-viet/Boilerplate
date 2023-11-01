@@ -8,8 +8,7 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
 
 /*
 
@@ -51,11 +50,9 @@ html {
 :root {
   --primary-text-color: #131312;
   --secondary-text-color: #fff;
-  --body-typeface: 'Manrope', sans-serif;
-  --background-color: #FFFFF9;
-  
+  --body-typeface: "Manrope", sans-serif;
+  --background-color: #fffff9;
 }
-
 
 body {
   font-family: var(--body-typeface);
@@ -67,7 +64,7 @@ body {
 }
 
 ::selection {
-  background: #FFF16F;
+  background: #fff16f;
 }
 
 /* Making all images responsive */
@@ -78,10 +75,7 @@ img {
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: contain;
   /* This is optional. Also try cover or leave out entirely. */
-
 }
-
-
 
 /* Global & Mobile Typography 
 
@@ -99,58 +93,56 @@ img {
   font-size: 3.25rem;
   font-weight: 700;
 }
-.title{
+.title {
   font-size: 3.25rem;
   font-weight: 400;
 }
 
 /* h2 */
-  .label-bold{
-    font-size: 2rem;
-      font-weight: 700;
-  }
-.label{
+.label-bold {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.label {
   font-size: 2rem;
   font-weight: 400;
 }
 
-.medlabel{
-font-size: 1.5rem;
-font-weight: 400;
+.medlabel {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 /* h3  */
-  .smlabel-bold{
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-  .smlabel{
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-
-
+.smlabel-bold {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.smlabel {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 
 /* Hyperlink Styles */
 /* a {} */
 
 a:hover,
-a:active {}
-a:visited{
-  color: black;}
-a:link{
+a:active {
+}
+a:visited {
+  color: black;
+}
+a:link {
   color: black;
   text-decoration: none;
 }
 
-
 /* p  */
-.body{
+.body {
   font-size: 1.25rem;
 }
-.smbody{
+.smbody {
   font-size: 1rem;
-
 }
 /* 
 playground
@@ -161,52 +153,96 @@ playground
 ██      ███████ ██   ██    ██     ██████  ██   ██  ██████   █████  ██   ████ ██████  
    /                                                                                   */
 
-   .play-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
 
-    .play-container{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    
-    }
+.filterDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  display: none; /* Hidden by default */
+}
 
-  
-    .play-card img{
-      max-width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.3s;
-      border-radius: 1rem;
-      margin-top: 4rem;
-      
-    }
-    
-    .play-card:hover img {
-      transform: translateY(-4px);
-    }
-    
-    .play-hero h2{
-      text-align: center;
-      padding: 2vh 5vh;
-    }
+/* The "show" class is added to the filtered elements */
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .play-hero{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 5vh;
-      line-height: 6vh;
-    }
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
 
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
 
-    .filter-btn{
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* above css is from original demo - some of it might be able to be deleted but be careful */
+
+/* .play-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.play-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.play-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.play-card:hover img {
+  transform: translateY(-4px);
+}
+
+.play-hero h2 {
+  text-align: center;
+  padding: 2vh 5vh;
+}
+
+.play-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  line-height: 6vh;
+}
+
+.filter-btn {
   border: none;
   color: rgb(0, 0, 0);
   padding: 15px 32px;
@@ -215,20 +251,18 @@ playground
   font-size: 16px;
   border-radius: 1rem;
   border: 1px solid black;
-  background-color: #FFFFF9;
- 
-    }
-  
-    .filter-btn:hover {
-      background-color: #000; /* Green */
-      color: white;
-    }
-   
-    .filter-btn.active{
-      background-color: #000; /* Green */
-      color: white;
-    }
+  background-color: #fffff9;
+}
 
+.filter-btn:hover {
+  background-color: #000; /* Green */
+  color: white;
+}
+
+.filter-btn.active {
+  background-color: #000; /* Green */
+  color: white;
+}
 
 /* Work Page Layout
 
@@ -239,14 +273,14 @@ playground
  ███ ███   ██████  ██   ██ ██   ██     ██      ██   ██  ██████  ███████ 
 
 */
-.work-items{
+.work-items {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  }
+}
 
-.cards-container{
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -255,27 +289,25 @@ playground
   margin: 0 auto;
   padding: 20px;
   text-decoration: none;
-
 }
 
 .card {
   position: relative;
-    width: calc(50% - 30px); /* 50% width with 20px gap between images */
-    margin-bottom: 20px;
+  width: calc(50% - 30px); /* 50% width with 20px gap between images */
+  margin-bottom: 20px;
 
-    @media (max-width: 700px) {
-        width: 100%; /* Full width on screens less than 600px */
-    }
+  @media (max-width: 700px) {
+    width: 100%; /* Full width on screens less than 600px */
+  }
 }
 
-.card img{
+.card img {
   max-width: 100%;
   height: auto;
   display: block;
   transition: transform 0.3s;
   border-radius: 1rem;
   text-decoration: none;
-  
 }
 
 .card:hover img {
@@ -284,17 +316,16 @@ playground
 
 .card p {
   text-align: left;
-  margin: 10px 0;  
+  margin: 10px 0;
   text-decoration: none;
 }
-.caption{
+.caption {
   padding-top: 0.5rem;
   line-height: 2rem;
   text-decoration: none;
-
 }
-.caption p{
-  color: #5C5C5C;
+.caption p {
+  color: #5c5c5c;
   text-decoration: none;
 }
 
@@ -307,8 +338,7 @@ playground
                                                                                
                                                                                 */
 
-
-.intro{
+.intro {
   display: flex;
   align-items: center;
   font-size: 3rem;
@@ -323,21 +353,20 @@ playground
 ██   ██ ███████ ██   ██  ██████  
 */
 
-.hero{
+.hero {
   margin: 10vh 15vh;
   padding: 10vh;
   line-height: 8vh;
   font-size: 3.25rem;
   font-weight: 400;
-
 }
-.hero h1{
-  @media (max-width: 750px){
+.hero h1 {
+  @media (max-width: 750px) {
     font-size: 1.8rem;
-  line-height: 6vh;
-  text-align: center;
-
-}}
+    line-height: 6vh;
+    text-align: center;
+  }
+}
 
 /* Header 
 
@@ -351,60 +380,58 @@ playground
                                  
 */
 
-.nav-item{
+.nav-item {
   font-size: 1rem;
   text-decoration: none;
   padding: 1em 2rem;
-  
 }
 
-.logo-container{
-width: 30%;
-margin: auto;
-margin-top: 1vh;
+.logo-container {
+  width: 30%;
+  margin: auto;
+  margin-top: 1vh;
 }
 
-.nav{
+.nav {
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: solid;
   border-top: solid;
-  border-color: #C1C1C1;
+  border-color: #c1c1c1;
   border-width: 0.5px;
-  background-color: #FFFFF9;
-
+  background-color: #fffff9;
 }
- ul.nav-menu {
-            list-style: none;
-            display: flex;
-        }
+ul.nav-menu {
+  list-style: none;
+  display: flex;
+}
 
-        li.nav-item {
-            margin-right: 20px;
-        }
+li.nav-item {
+  margin-right: 20px;
+}
 
-        a.nav-link {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: background-color 0.3s, transform 0.3s;
-            display: inline-block;
-        }
+a.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+}
 
-        a.nav-link:hover {
-            background-color: #EEE;
-            transform: translateY(-4px);
-        }
+a.nav-link:hover {
+  background-color: #eee;
+  transform: translateY(-4px);
+}
 
-        a.selected {
-            background-color: #FFF16F;
-            color: #333;
-            transform: translateY(-2px);
-        }
+a.selected {
+  background-color: #fff16f;
+  color: #333;
+  transform: translateY(-2px);
+}
 /* 
 
 
@@ -417,44 +444,42 @@ margin-top: 1vh;
 
 */
 
-
 .about-page {
   /* background: white; */
-
 }
-.about-content{
+.about-content {
   display: flex;
   flex-direction: row;
   margin: 0vh 10vh;
 
-  @media (max-width: 892px){
+  @media (max-width: 892px) {
     flex-direction: column;
-}
-}
-
-.about-text{
-  margin-top: 10vh;
-}
-.street-cred{
-  margin-top: 10vh;
+  }
 }
 
-.experience{
+.about-text {
+  margin-top: 10vh;
+}
+.street-cred {
+  margin-top: 10vh;
+}
+
+.experience {
   margin-top: 4vh;
-  line-height:24pt;
+  line-height: 24pt;
 }
 
-.link-underline{
+.link-underline {
   text-decoration: underline;
 }
 
-.nice-things{
+.nice-things {
   margin-top: 5vh;
-  line-height:24pt;
+  line-height: 24pt;
 }
 
-.bio{
-  line-height:40pt;
+.bio {
+  line-height: 40pt;
 }
 
 /* Global Footer
@@ -467,22 +492,21 @@ margin-top: 1vh;
                                                    
 */
 
-
-.footer p{
-padding-top: 2vh;
-
+.footer p {
+  padding-top: 2vh;
 }
-.footer-text{
+.footer-text {
   display: flex;
   flex-direction: column;
-  @media (max-width: 700px){
-    align-items:center;
-    text-align: center;}
-    line-height: 5vh;
+  @media (max-width: 700px) {
+    align-items: center;
+    text-align: center;
+  }
+  line-height: 5vh;
 }
 
-.footer{
-  display:flex;
+.footer {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -490,28 +514,28 @@ padding-top: 2vh;
   padding-left: 10vh;
   padding-right: 10vh;
   margin-bottom: 5vh;
-  padding-top: 5vh; 
+  padding-top: 5vh;
   border-top: solid;
-  border-color: #C1C1C1;
+  border-color: #c1c1c1;
   border-width: 0.5px;
 
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     flex-direction: column;
-}
+  }
 }
 
-.social-media-list{
+.social-media-list {
   display: flex;
   flex-direction: row;
   padding-top: 1rem;
 }
-.social-media-icon{
+.social-media-icon {
   padding: 0.25rem;
   font-size: 2rem;
 }
 
-.social-media-icon-link{
-color: rgb(0, 0, 0);
+.social-media-icon-link {
+  color: rgb(0, 0, 0);
 }
 
 /* Project Page 
@@ -523,11 +547,6 @@ color: rgb(0, 0, 0);
 ██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
                                                                                                
 */
-
-
-
-
-
 
 /*
 
@@ -542,80 +561,66 @@ color: rgb(0, 0, 0);
 */
 
 /* for nav */
-@media (max-width: 700px){
+@media (max-width: 700px) {
   /* body {background: rgb(100, 11, 11);} */
-  .logo-container{
-    width: 50%;}
+  .logo-container {
+    width: 50%;
+  }
 
+  .nav {
+    display: none;
+    flex-direction: column;
+    /* background-color: #ffffff; */
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
 
-    .nav {
-        display: none;
-        flex-direction: column;
-        /* background-color: #ffffff; */
-        position: absolute;
-        top: 15vh;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 1;
-    }
+  .nav.active {
+    display: flex;
+  }
 
-    .nav.active {
-        display: flex;
-    }
-
-    .nav li {
-        margin: 2vh;
-    }
+  .nav li {
+    margin: 2vh;
+  }
 }
 
 .menu-icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
-    .menu-icon {
-        display: block;
-        text-align: center;
-        
-    }
+  .menu-icon {
+    display: block;
+    text-align: center;
+  }
 }
-  
-
 
 /* @media (min-width: 576px) {
  
 }
 
 /* Medium devices (tablets, 750px and up) */
-@media (min-width: 750px)
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+@media (min-width: 750px) /* Large devices (desktops, 992px and up) */ @media (min-width: 992px) {
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
-
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1920px) {
-
-  
-  } */
+}
+*/
 
 
   /* playground Page Layout
@@ -630,12 +635,13 @@ color: rgb(0, 0, 0);
 
 .work-wrapper {
   flex: 1;
-  background-color: #F2FCD2;
+  background-color: #f2fcd2;
 }
 
 /* Padding around work grid and project page */
-.portfolio, .project-wrapper {
-  padding: .25rem
+.portfolio,
+.project-wrapper {
+  padding: 0.25rem;
 }
 
 /* Defining the work page grid */
@@ -645,9 +651,6 @@ color: rgb(0, 0, 0);
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
-
-
-
 
 /* Optional – Sizing the work page images */
 /* figure {
