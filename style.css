@@ -364,6 +364,7 @@ playground
   @media (max-width: 750px) {
     font-size: 1.8rem;
     line-height: 6vh;
+    text-align: center;
 
   }
 }
