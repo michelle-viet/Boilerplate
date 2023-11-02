@@ -355,6 +355,7 @@ playground
 
 .hero {
   margin: 10vh 15vh;
+  padding: 10vh;
   line-height: 8vh;
   font-size: 3.25rem;
   font-weight: 400;
@@ -367,7 +368,6 @@ playground
 
   }
 }
-
 
 /* Header 
 
@@ -532,7 +532,7 @@ a.link-underline {
 }
 .social-media-icon {
   padding: 0.25rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .social-media-icon-link {
@@ -607,22 +607,21 @@ a.link-underline {
 }
 
 /* Medium devices (tablets, 750px and up) */
-@media (min-width: 750px) /* Large devices (desktops, 992px and up) */ 
+@media (min-width: 750px) /* Large devices (desktops, 992px and up) */ @media (min-width: 992px) {
+}
 
-/* @media (min-width: 992px) {
-} */
-
-/* X-Large devices (large desktops, 1200px and up)
+/* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-} */
+}
 
-/* XX-Large devices (larger desktops, 1400px and up)
+/* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-} */
+}
 
-XX-Large devices (larger desktops, 1920 and up)
- @media (min-width: 1920px) {}
-
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1920px) {
+}
+*/
 
 
   /* playground Page Layout
