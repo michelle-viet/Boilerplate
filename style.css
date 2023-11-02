@@ -192,7 +192,6 @@ playground
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  overflow: hidden;
 }
 
 .play-card img {
@@ -348,6 +347,18 @@ playground
   }
 }
 
+#hero {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	border-right: 3px solid #FFF16F;
+}
+
+
+
 
 /* Header 
 
@@ -360,6 +371,26 @@ playground
 
                                  
 */
+
+ /* Define styles for the desktop logo */
+ #logo {
+  display: block;
+}
+
+/* Define styles for the mobile logo */
+#mobile-logo {
+  display: none;
+}
+
+/* Use a media query to switch between the logos */
+@media (max-width: 700px) {
+  #logo {
+      display: none;
+  }
+  #mobile-logo {
+      display: block;
+  }
+}
 
 .nav-item {
   font-size: 1rem;
@@ -528,7 +559,13 @@ a.link-underline {
 ██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
                                                                                                
 */
-
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
 /*
 
 ███╗   ███╗███████╗██████╗ ██╗ █████╗ 
@@ -641,3 +678,4 @@ a.link-underline {
   overflow: hidden;
   position: relative;
 } */
+/* 
