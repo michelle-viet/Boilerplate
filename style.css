@@ -637,7 +637,7 @@ a.link-underline {
 
 .work-wrapper {
   flex: 1;
-  background-color: #f2fcd2;
+  background-color: ##fffff9;
 }
 
 /* Padding around work grid and project page */
@@ -666,7 +666,7 @@ a.link-underline {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #fff16f;
+  background: #fffff9;
 }
 
 /* Sidebar */
@@ -695,7 +695,6 @@ a.link-underline {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: red;
 }
 
 .project-image {
