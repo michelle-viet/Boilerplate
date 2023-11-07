@@ -343,22 +343,18 @@ playground
     font-size: 1.8rem;
     line-height: 6vh;
     text-align: center;
-
   }
 }
 
 #hero {
-	margin: 50px 0 0 0;
-	text-align: center;
+  margin: 50px 0 0 0;
+  text-align: center;
 }
 
 #text {
-	display: inline-block;
-	border-right: 3px solid #FFF16F;
+  display: inline-block;
+  border-right: 3px solid #fff16f;
 }
-
-
-
 
 /* Header 
 
@@ -372,8 +368,8 @@ playground
                                  
 */
 
- /* Define styles for the desktop logo */
- #logo {
+/* Define styles for the desktop logo */
+#logo {
   display: block;
 }
 
@@ -385,10 +381,10 @@ playground
 /* Use a media query to switch between the logos */
 @media (max-width: 700px) {
   #logo {
-      display: none;
+    display: none;
   }
   #mobile-logo {
-      display: block;
+    display: block;
   }
 }
 
@@ -469,11 +465,11 @@ a.selected {
   }
 }
 
-.street-cred{
+.street-cred {
   margin-top: 5vh;
 }
-.about-text{
-margin-top: 5vh;
+.about-text {
+  margin-top: 5vh;
 }
 
 .experience {
@@ -559,7 +555,7 @@ a.link-underline {
 ██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
                                                                                                
 */
-.intro{
+.intro {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -624,25 +620,10 @@ a.link-underline {
 }
 
 /* Medium devices (tablets, 750px and up) */
-@media (min-width: 750px) /* Large devices (desktops, 992px and up) */ 
+@media (min-width: 750px) /* Large devices (desktops, 992px and up) */ /* @media (min-width: 992px) { } */ /* X-Large devices (large desktops, 1200px and up) @media (min-width: 1200px) { } */ /* XX-Large devices (larger desktops, 1400px and up) @media (min-width: 1400px) { } */ /* XX-Large devices (larger desktops, 1920 and up) */ @media screen (min-width: 1920px) {
+}
 
-/* @media (min-width: 992px) {
-} */
-
-/* X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-} */
-
-/* XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-} */
-
-/* XX-Large devices (larger desktops, 1920 and up) */
- @media screen (min-width: 1920px) {}
-
-
-
-  /* playground Page Layout
+/* playground Page Layout
 
 ██████  ██       █████  ██    ██     ██     ██  ██████  ██████  ██   ██ 
 ██   ██ ██      ██   ██  ██  ██      ██     ██ ██    ██ ██   ██ ██  ██  
@@ -663,7 +644,6 @@ a.link-underline {
 .portfolio,
 .project-wrapper {
   padding: 0.25rem;
-
 }
 
 /* Defining the work page grid */
@@ -675,19 +655,19 @@ a.link-underline {
 }
 
 /* Optional – Sizing the work page images */
+
 /* figure {
   max-height: 250px;
   overflow: hidden;
   position: relative;
 } */
-/* 
 
-
-/* .project-wrapper {
+.project-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} */
+  background: #fff16f;
+}
 
 /* Sidebar */
 .project-aside {
@@ -720,13 +700,12 @@ a.link-underline {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   /* min-height should be deleted if you want to remove space between project images on project pages */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .text-section {
   width: 100%;
@@ -740,29 +719,13 @@ a.link-underline {
 
 /* Main Project Image Area */
 
+.project-aside,
 .project-details {
   width: 100%;
-  padding: 1rem;
-}
-
-
-
-.project-aside {
-  width: 35%;
-  height: 65vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5vh;
-  padding-right: 2rem;
-}
-
-/* Main Project Image Area on Large Devices */
-.project-details {
-  width: 65%;
 }
 
 .project-image {
-  min-height: 70vh;
+  /* min-height: 70vh; */
   /* This should be deleted if you want to remove space between project images on project pages */
 }
 
@@ -779,13 +742,12 @@ a.link-underline {
 }
 
 @media (min-width: 992px) {
-
   .project-wrapper {
     flex-direction: row;
-
   }
 
   /* Sidebar on Large Devices */
+
   .project-aside {
     width: 35%;
     height: 65vh;
@@ -795,14 +757,13 @@ a.link-underline {
     padding-right: 2rem;
   }
 
-
   /* Main Project Image Area on Large Devices */
   .project-details {
     width: 65%;
   }
 
   .project-image {
-    min-height: 70vh;
+    /* min-height: 70vh; */
     /* This should be deleted if you want to remove space between project images on project pages */
   }
 
@@ -817,6 +778,4 @@ a.link-underline {
   .arrow {
     padding-right: 1rem;
   }
-
-
 }
