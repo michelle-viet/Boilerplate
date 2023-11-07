@@ -683,11 +683,11 @@ a.link-underline {
 /* 
 
 
-.project-wrapper {
+/* .project-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 /* Sidebar */
 .project-aside {
@@ -695,6 +695,7 @@ a.link-underline {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  background-color: #fffff9;
 }
 
 .project-navigation {
@@ -775,4 +776,47 @@ a.link-underline {
 
 .arrow {
   padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+
+  .project-wrapper {
+    flex-direction: row;
+
+  }
+
+  /* Sidebar on Large Devices */
+  .project-aside {
+    width: 35%;
+    height: 65vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vh;
+    padding-right: 2rem;
+  }
+
+
+  /* Main Project Image Area on Large Devices */
+  .project-details {
+    width: 65%;
+  }
+
+  .project-image {
+    min-height: 70vh;
+    /* This should be deleted if you want to remove space between project images on project pages */
+  }
+
+  .project-image-container {
+    flex-direction: row;
+  }
+
+  .project-navigation {
+    justify-content: flex-start;
+  }
+
+  .arrow {
+    padding-right: 1rem;
+  }
+
+
 }
