@@ -786,7 +786,7 @@ a.link-underline {
   }
 
   /* zoom in out 100 proj */
-   
+/*    
 }
 .click-zoom input[type=checkbox] {
   display: none
@@ -800,7 +800,7 @@ a.link-underline {
 .click-zoom input[type=checkbox]:checked~img {
   transform: scale(2);
   cursor: zoom-out
-}
+} */
 
 /* 100 generator */
 
