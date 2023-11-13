@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>100 Annoying Things | Illustration | Michelle Viet</title>
+    <meta
+      name="Michelle Viet Portfolio"
+      content="Michelle is a UX and product designer keen to design for the best. Prev. @ SAP and Railyard Lab!!"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/bd0a9b4500.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="index.html">
+          <img
+            class="default-logo"
+            id="logo"
+            src="images/logo/logo-core-black.png"
+            alt="Logo"
+          />
+
+          <img
+            id="mobile-logo"
+            src="images/logo/michelle-logo-gif.gif"
+            alt="Mobile Logo"
+          />
+        </a>
+      </div>
+
+      <div class="navigation-container">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link selected" href="playground.html">playground</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="MichelleViet_Resume2024.pdf"
+              target="_blank"
+              >resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="project-wrapper">
+      <aside class="project-aside">
+        <div class="project-info">
+          <h1 class="title">100 Annoying<br> Little Things</h1>
+          <p class="smbody">illustration / ideation</p>
+          <h2 class="medlabel">
+            This was an ideation exercise to brainstorm 100 different ideas for a topic because quantity can breed innovation. The more ideas, the higher the chances of stumbling upon interesting concepts that might not have surfaced in a more constrained brainstorming setting. I explored life's minor nuisances, turning the mundane into a delightful mini visual adventure.
+          </p>
+        </div>
+        <ul class="project-navigation">
+          <li class="arrow">
+            <a href="playground-chirpit.html" class="navigation-arrow"
+              ><i class="fas fa-arrow-left fa-2x"></i
+            ></a>
+          </li>
+          <li class="arrow">
+            <a href="project-2.html" class="navigation-arrow"
+              ><i class="fas fa-arrow-right fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <main class="project-details">
+        
+        <div class="click-zoom">
+            <label>
+              <input type="checkbox">
+              <img src="images/projects/playground/100/michelle-viet--100-project-ideation-illustration-no-copy.png">
+            </label>
+          </div>
+
+
+          <!-- <button class="generator" onclick="generateRandomImage()">what's my minor inconvenience for today?</button>
+
+<div id="100-container">
+  <img id="random-image" alt="Random Image">
+  <p id="100caption"></p>
+</div> -->
+
+
+          
+          
+          
+
+
+        
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <h2 class="label-bold">
+          thank you for visiting my portfolio.<br />
+          let's work together!
+        </h2>
+        <p>© Michelle Viet 2023-2024</p>
+      </div>
+
+      <ul class="social-media-list">
+        <li class="social-media-icon">
+          <a
+            href="mailto:michelleviet01@gmail.com"
+            target="_blank"
+            class="social-media-icon-link"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+        <li class="social-media-icon">
+          <a
+            href="https://www.linkedin.com/in/michelle-viet/"
+            target="_blank"
+            class="social-media-icon-link"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social-media-icon">
+          <a
+            href="https://www.behance.net/michelleviet"
+            target="_blank"
+            class="social-media-icon-link"
+            ><i class="fa-brands fa-square-behance"></i
+          ></a>
+        </li>
+        <li class="social-media-icon">
+          <a
+            href="https://www.instagram.com/michelleviet/"
+            target="_blank"
+            class="social-media-icon-link"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="interaction.js"></script>
+
+    <script type="text/javascript">
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+
+  </body>
+</html>

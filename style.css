@@ -785,5 +785,24 @@ a.link-underline {
     padding-right: 1rem;
   }
 
+  /* zoom in out 100 proj */
    
 }
+.click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}
+
+/* 100 generator */
+
+
+

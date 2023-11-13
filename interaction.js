@@ -154,3 +154,26 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+
+// generator 100
+
+
+const imageCaptionPairs = [
+  { image: 'image1.jpg', caption: 'Caption 1' },
+  { image: 'image2.jpg', caption: 'Caption 2' },
+  { image: 'image3.jpg', caption: 'Caption 3' },
+  // Add more image-caption pairs as needed
+];
+
+function generateRandomImage() {
+  const randomIndex = Math.floor(Math.random() * imageCaptionPairs.length);
+  const randomPair = imageCaptionPairs[randomIndex];
+
+  const imageElement = document.getElementById('random-image');
+  const captionElement = document.getElementById('100caption');
+
+  imageElement.src = randomPair.image;
+  imageElement.alt = randomPair.caption;
+  captionElement.innerText = randomPair.caption;
+}
