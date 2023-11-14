@@ -92,6 +92,11 @@ img {
 .title-bold {
   font-size: 3.25rem;
   font-weight: 700;
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
+
 }
 .title {
   font-size: 3.25rem;
@@ -459,7 +464,7 @@ a.selected {
 .about-content {
   display: flex;
   flex-direction: row;
-  margin: 0vh 0vh;
+  margin: 0vh 8vh;
 
   @media (max-width: 892px) {
     flex-direction: column;
