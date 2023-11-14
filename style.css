@@ -740,7 +740,7 @@ a.link-underline {
 @media (min-width: 992px) {
   .project-wrapper {
     flex-direction: row;
-  }}
+  }
 
   /* Sidebar on Large Devices */
 
@@ -793,4 +793,4 @@ a.link-underline {
   max-width: 75%;
 }
 
-
+} 
