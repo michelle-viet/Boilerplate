@@ -94,7 +94,7 @@ img {
   font-weight: 700;
 
   @media (max-width: 700px) {
-    font-size: 1rem;
+    font-size: 3.25rem;
   }
 
 }
@@ -485,6 +485,7 @@ a.selected {
 
 a.link-underline {
   text-decoration: underline;
+ 
   
 }
 
