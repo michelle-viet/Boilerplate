@@ -115,7 +115,7 @@ img {
 
 .medlabel {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* h3  */
@@ -305,7 +305,7 @@ playground
 }
 .caption {
   padding-top: 0.5rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   text-decoration: none;
 }
 .caption p {
@@ -327,6 +327,12 @@ playground
   align-items: center;
   font-size: 3rem;
   padding: 3rem;
+}
+
+.coming-soon{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 /* Hero 
