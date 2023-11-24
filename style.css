@@ -94,7 +94,7 @@ img {
   font-weight: 700;
 
   @media (max-width: 700px) {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
   }
 
 }
@@ -120,12 +120,17 @@ img {
 
 /* h3  */
 .smlabel-bold {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 .smlabel {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+/* h4  */
+.med-body{
+  font-size:1.3rem;
 }
 
 /* Hyperlink Styles */
@@ -325,8 +330,8 @@ playground
 .intro {
   display: flex;
   align-items: center;
-  font-size: 3rem;
-  padding: 3rem;
+  padding: 1rem 9rem;
+  line-height: 3rem;
 }
 
 .coming-soon{
@@ -345,6 +350,79 @@ flex-direction: column;
 align-items: center;
 }
 
+.case-study-container{
+  padding: 2rem 0rem;
+}
+
+.overview{
+  padding: 2rem 2rem 2rem 4rem;
+  background-color: #EEEEEE;
+  margin: auto;
+  line-height: 2rem;
+  max-width: 1080px;
+  border-radius: 16px;
+  justify-content: center;
+
+  @media (max-width: 850px) {
+    margin: 0em 3em;
+  }
+
+}
+
+.background-info{
+  display: flex;
+  flex-direction: row;
+  margin: 2em auto;
+  line-height: 2rem;
+  border-radius: 16px;
+  justify-content: center;
+  max-width: 1080px;
+
+  
+
+  @media (max-width: 850px) {
+    margin: 2em 3em;
+    flex-direction: column;
+  }
+}
+
+.b-i-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-start;
+  margin: 0.5em auto;
+
+}
+
+.b-i-item{
+  min-width: 200px;
+}
+
+.work-image-large{
+  border-radius: 16px;
+  max-width: 65%;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    max-width: 90%;
+  }
+}
+
+.summary{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0em 5em;
+}
+
+.two-column-content{
+  display: flex;
+  flex-direction: row;
+}
 
 /* Hero 
 ██   ██ ███████ ██████   ██████  
