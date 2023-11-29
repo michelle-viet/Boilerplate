@@ -843,6 +843,10 @@ a.link-underline {
   /* This should be deleted if you want to remove space between project images on project pages */
 }
 
+.work-image-large-play{
+  border-radius: 16px;
+}
+
 .project-image-container {
   flex-direction: row;
 }
@@ -910,6 +914,5 @@ a.link-underline {
 .work-image-large-menu{
   max-width: 75%;
 }
-
 } 
 /* this bottom bracket is for larger screen sizes */
