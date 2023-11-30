@@ -120,7 +120,7 @@ img {
 
 /* h3  */
 .smlabel-bold {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .smlabel {
@@ -131,6 +131,11 @@ img {
 /* h4  */
 .med-body{
   font-size:1.3rem;
+}
+
+.sectiontitle{
+  font-size:1.2rem;
+  font-weight: 400;
 }
 
 /* Hyperlink Styles */
@@ -334,6 +339,19 @@ playground
   line-height: 3rem;
 }
 
+.award{
+  background-color: #FFF06E;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1080px;
+  padding: 1rem;
+  border-radius: 50px;
+  border: 2px solid #FFEC46;
+  text-align: center;
+  color: #757575;
+}
+
 .coming-soon{
   display: flex;
   justify-content: center;
@@ -356,7 +374,7 @@ align-items: center;
 
 .overview{
   padding: 2rem 2rem 2rem 4rem;
-  background-color: #EEEEEE;
+  background-color: #f8f8ec;
   margin: auto;
   line-height: 2rem;
   max-width: 1080px;
@@ -397,6 +415,7 @@ align-items: center;
 
 .b-i-item{
   min-width: 200px;
+  color: #505050;
 }
 
 .work-image-large{
@@ -413,34 +432,125 @@ align-items: center;
 
 .summary{
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0em 5em;
+ padding: 2rem 2rem;
+  max-width: 1082px;
+}
+
+.the-opportunity{
+  margin: auto;
+ padding: 2rem 2rem;
+  max-width: 1082px;
 }
 
 .two-column-content{
   display: flex;
   flex-direction: row;
+  justify-content:space-between;
 
   @media (max-width: 850px) {
-    margin: 2em 3em;
+    margin: 2em 1em;
     flex-direction: column;
   }
 }
 
+.two-column-content-item p{
+  padding: 0rem 0 1rem 0rem;
+  line-height: 1.5rem;
+  color: #505050;
+}
+
+.two-column-content-item h2{
+  padding: 0rem 0rem 1rem 0rem;
+  line-height: 2.5rem;
+}
+
+.four-items-content-item{
+line-height: 1.5;
+  width: 50%;
+  
+}
+
+.four-items-content{
+margin-top: 2rem;
+display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+  @media (max-width: 850px) {
+    margin: 2em 1em;
+    flex-direction: column;
+  }
+}
+
+
+.four-items-content-item p{
+  color: #505050;
+}
+
 .section-title{
   max-width: 1082px;
-  border-bottom: 2px solid #000;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: left;
+}
+
+.end-result{
   margin: 2rem auto;
+ padding: 0rem 2rem;
+  max-width: 1082px;
+
+}
+
+.container222{
+  background-color: #f8f8ec;
+  padding: 3rem 0rem;
+}
+
+
+.img-caption{
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 850px) {
+    margin: 2em 1em;
+    flex-direction: column;
+  }
+
+}
+
+.work-image-med{
+  border-radius: 16px;
+  margin: 0em auto;
+  display: flex;
+  justify-content: center;
+
  
 }
 
-/* .summary{
-  display: flex;
-  justify-content: center;
-  margin: 2em;
-} */
+.img-caption-copy{
+  padding-left: 2rem;
+  line-height: 1.5rem;
+}
+
+.img-caption-copy h3{
+  margin-bottom: 1rem
+}
+
+.title-and-subhead-item h3{
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.the-problem{
+margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+
+}
+
+
 /* Hero 
 ██   ██ ███████ ██████   ██████  
 ██   ██ ██      ██   ██ ██    ██ 
