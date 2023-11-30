@@ -372,7 +372,7 @@ align-items: center;
   padding: 2rem 0rem;
 }
 
-.overview{
+.highlight{
   padding: 2rem 2rem 2rem 4rem;
   background-color: #f8f8ec;
   margin: auto;
@@ -420,7 +420,19 @@ align-items: center;
 
 .work-image-large{
   border-radius: 16px;
-  max-width: 65%;
+
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    max-width: 90%;
+  }
+}
+
+.work-image-hero{
+  border-radius: 16px;
+max-width: 65%;
   margin: 2em auto;
   display: flex;
   justify-content: center;
@@ -550,6 +562,50 @@ padding: 2rem 2rem;
 
 }
 
+.twocolumn-with-pic{
+display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+
+  @media (max-width: 850px) {
+    margin: 2em 1em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.twocolumn-with-pic-item{
+  line-height: 1.5;
+  width: 50%;
+}
+
+.twocolumn-with-pic-item p{
+  color: #505050;
+  margin-bottom: 2rem;
+}
+
+.interpret-results{
+  margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+}
+
+.research{
+  margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+}
+
+.interpret-results{
+  line-height: 1.5rem;
+}
+
+.Ideation{
+  margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+}
 
 /* Hero 
 ██   ██ ███████ ██████   ██████  
