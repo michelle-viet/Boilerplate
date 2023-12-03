@@ -344,7 +344,7 @@ playground
   margin: 3rem auto;
   display: flex;
   justify-content: center;
-  max-width: 1080px;
+  max-width: 600px;
   padding: 1rem;
   border-radius: 50px;
   border: 2px solid #FFEC46;
@@ -356,8 +356,10 @@ playground
   display: flex;
   justify-content: center;
   padding-top: 2rem;
-  margin-bottom: 4rem;
   text-align: center;
+  margin: 0.5rem auto;
+flex-direction: column;
+align-items: center;
 }
 
 .comingsoondiv{
@@ -384,7 +386,6 @@ align-items: center;
   @media (max-width: 850px) {
     margin: 0em 3em;
   }
-
 }
 
 .background-info{
@@ -534,11 +535,19 @@ display: flex;
 
 .work-image-med{
   border-radius: 16px;
-  margin: 0em auto;
+  margin: 1em auto;
   display: flex;
   justify-content: center;
 
  
+}
+
+.img-columncaption{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
 }
 
 .img-caption-copy{
@@ -607,6 +616,50 @@ padding: 2rem 2rem;
  max-width: 1082px;
 }
 
+.images-grid-img{
+  border-radius: 16px;
+  margin-top: 0.25rem;
+}
+
+.images-grid{
+  margin-top: 2rem;
+}
+
+.testing{
+  margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+}
+
+.images-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.textandimages{
+width: 50%;
+margin: 2rem 0.5rem;
+line-height: 1.65rem;
+}
+
+.textandimages-grid-img{
+  border-radius: 6px;
+  margin-bottom: 1rem;
+
+}
+
+.branding{
+  margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+}
+
+.learnings{
+  margin: auto;
+padding: 2rem 2rem;
+ max-width: 1082px;
+}
+
 /* Hero 
 ██   ██ ███████ ██████   ██████  
 ██   ██ ██      ██   ██ ██    ██ 
@@ -616,11 +669,12 @@ padding: 2rem 2rem;
 */
 
 .hero {
-  margin: 10vh 15vh;
+  margin: 10vh auto;
   line-height: 8vh;
   font-size: 3.25rem;
   font-weight: 400;
   text-align: center;
+  padding: 0rem 10rem;
 }
 .hero h1 {
   @media (max-width: 800px) {
@@ -639,6 +693,8 @@ padding: 2rem 2rem;
   display: inline-block;
   border-right: 3px solid #fff16f;
 }
+
+
 
 /* Header 
 
@@ -923,12 +979,12 @@ a.link-underline {
 .project-info p{
   color: #5c5c5c;
   line-height: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-info h2{
   line-height: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .work-wrapper {
