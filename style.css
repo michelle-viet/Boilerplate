@@ -484,7 +484,7 @@ line-height: 1.5;
 }
 
 .four-items-content{
-margin-top: 2rem;
+margin-top: 1rem;
 display: flex;
   flex-direction: row;
   justify-content:space-between;
