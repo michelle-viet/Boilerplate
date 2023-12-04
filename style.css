@@ -77,6 +77,50 @@ img {
   /* This is optional. Also try cover or leave out entirely. */
 }
 
+/* smooth scroll to top */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+html {
+  scroll-behavior: auto;
+}
+}
+
+:target {
+  scroll-margin-top: 1rem;
+}
+
+@supports not (scroll-margin-top: 1rem) {
+  :target:before {
+      content: '';
+      display: block;
+      position: relative;
+      bottom: 0;
+      width: 0;
+      height: 1rem;
+      margin-top: -1rem;
+  }
+}
+
+@supports not (scroll-margin-top: 1rem) {
+  #top::after {
+      content: ' (This browser does not scroll smoothly)';
+      display: block;
+      font-size: 0.5em;
+      margin-top: 1em;
+  }
+}
+
+.casestudy-nav{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+
 /* Global & Mobile Typography 
 
 ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██ 
@@ -88,6 +132,8 @@ img {
 */
 
 /* h1  */
+
+
 
 .title-bold {
   font-size: 3.25rem;
@@ -422,6 +468,18 @@ align-items: center;
 .work-image-large{
   border-radius: 16px;
 
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 700px) {
+    max-width: 90%;
+  }
+}
+
+.work-image-large2{
+  border-radius: 16px;
+max-width: 75%;
   margin: 2em auto;
   display: flex;
   justify-content: center;
@@ -861,7 +919,7 @@ a.link-underline {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 5vh;
+  margin-top: 1vh;
   padding-left: 10vh;
   padding-right: 10vh;
   margin-bottom: 5vh;
