@@ -387,6 +387,12 @@ playground
   line-height: 3rem;
 }
 
+.project-video{
+  display: flex;
+  justify-content: center;
+  margin: -10rem auto;
+}
+
 .award{
   background-color: #FFF06E;
   margin: 3rem auto;
