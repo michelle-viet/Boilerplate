@@ -591,6 +591,10 @@ display: flex;
   margin-bottom: 1rem;
 }
 
+.four-items-content-item:first-of-type {
+  margin-right: 1.5rem; 
+}
+
 .section-title{
   max-width: 1082px;
   margin: 1rem auto;
@@ -773,7 +777,8 @@ padding: 2rem 2rem;
   font-size: 3.25rem;
   font-weight: 400;
   text-align: center;
-  padding: 0rem 10rem;
+  padding: 0;
+  width: 45ch;
 }
 .hero h1 {
   @media (max-width: 800px) {
