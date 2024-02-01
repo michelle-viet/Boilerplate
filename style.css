@@ -784,7 +784,7 @@ padding: 2rem 2rem;
   width: 80%;
 }
 
-.hero-icon {width: 4rem; background: red;}
+.hero-icon {width: 4rem; }
 
   @media (max-width: 800px) {
     .hero-intro {
