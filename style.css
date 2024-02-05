@@ -786,6 +786,8 @@ padding: 2rem 2rem;
 
 .hero-icon {width: 4rem; }
 
+.hero-icon2 {width: 5rem; }
+
   @media (max-width: 800px) {
     .hero-intro {
         font-size: 1.5rem;
