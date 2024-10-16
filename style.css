@@ -550,13 +550,18 @@ max-width: 65%;
 
 .two-column-content{
   display: flex;
-  flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
+  gap: 2em; /* adds space between columns */
 
   @media (max-width: 850px) {
     margin: 2em 1em;
     flex-direction: column;
   }
+}
+
+.two-column-content-item{
+  flex-grow: 1;
+  margin: 0 1em;
 }
 
 .two-column-content-item p{
@@ -573,7 +578,6 @@ max-width: 65%;
 .four-items-content-item{
 line-height: 1.5;
   width: 50%;
-  
 }
 
 .four-items-content{
@@ -668,6 +672,13 @@ display: flex;
   line-height: 2rem;
   margin-top: 1rem;
 }
+
+.title-and-subhead-content{
+  margin-bottom: 8rem;
+  margin-top: 1rem;
+}
+
+
 .the-problem{
 margin: auto;
 padding: 2rem 2rem;
