@@ -171,6 +171,7 @@ html {
 .smlabel-bold {
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 1.2rem;
 }
 .smlabel {
   font-size: 1.2rem;
@@ -777,6 +778,9 @@ padding: 2rem 2rem;
 
 
 
+
+
+
 /* Hero 
 ██   ██ ███████ ██████   ██████  
 ██   ██ ██      ██   ██ ██    ██ 
@@ -954,6 +958,10 @@ a.link-underline {
 
 .bio {
   line-height: 40pt;
+}
+
+.img-about{
+  align-self: flex-start;
 }
 
 /* Global Footer
