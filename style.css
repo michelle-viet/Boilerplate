@@ -645,6 +645,12 @@ display: flex;
  
 }
 
+.work-image-final{
+display: flex;
+justify-content: center;
+margin: 0em auto;
+}
+
 .img-columncaption{
   display: flex;
   justify-content: center;
@@ -962,7 +968,7 @@ a.link-underline {
 
 @media (max-width: 800px) {
   .bio {
-      font-size: 100rem;
+      font-size: 1rem;
   line-height: 6vh;
   text-align: center;
 }
@@ -971,6 +977,10 @@ a.link-underline {
 .img-about{
   align-self: flex-start;
   margin-top: 9vh;
+}
+
+.about-text-block{
+  margin-bottom: 8vh;
 }
 
 /* Global Footer
