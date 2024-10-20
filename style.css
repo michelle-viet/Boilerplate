@@ -960,8 +960,17 @@ a.link-underline {
   line-height: 40pt;
 }
 
+@media (max-width: 800px) {
+  .bio {
+      font-size: 100rem;
+  line-height: 6vh;
+  text-align: center;
+}
+}
+
 .img-about{
   align-self: flex-start;
+  margin-top: 9vh;
 }
 
 /* Global Footer
