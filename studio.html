@@ -12,6 +12,7 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <script src="https://kit.fontawesome.com/bd0a9b4500.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./playground.css" />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 <ul class="nav">
         <li class="nav-item"><a class="nav-link" href="index.html">work</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
-        <li class="nav-item"><a class="nav-link selected" href="playground.html">play</a></li>
+        <li class="nav-item"><a class="nav-link selected" href="playground.html">studio</a></li>
         <li class="nav-item"><a class="nav-link" href="MichelleViet_Resume2024.pdf" target="_blank">resume</a></li>
     </ul>
   </div>  
@@ -68,96 +69,40 @@
     </div>
   </div>
 
-  <section class="play-items">
-    <div class="play-container">
-      <!-- Swingporium -->
-      <div class="filterDiv interactive">
-        <div class="play-card">
-          <a href="playground-swingporium.html">
-            <img src="images/projects/playground/swingporium/michelle-viet--swingporium-electro-swing-music-festival--augmented-reality-branding-design-cover.jpg" alt="Image 1" />
-            <div class="caption">
-              <h2 class="medlabel">
-                swingporium - electro swing music festival
-              </h2>
-              <p class="smbody">
-                augmented reality (ar) / branding / illustration
-              </p>
-            </div>
-          </a>
-        </div>
+  <section class="content">
+
+    <div class="toggle-container">
+        <span class="label">Play</span>
+        <div class="toggle-switch" onclick="toggleProjects()"></div>
+        <span class="label">Freelance</span>
       </div>
-
-<!-- Living oCeans  -->
-<div class="filterDiv interactive motion">
-  <div class="play-card">
-    <a href="playground-livingoceans.html">
-      <img src="images/projects/playground/livingoceans/michelle--viet--living-oceans-microsite-cover-ui-motion-design.gif" alt="Image 1" />
-      <div class="caption">
-        <h2 class="medlabel">living oceans website interactions</h2>
-        <p class="smbody">motion / ui / illustration</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-      <!-- Chirpit -->
-      <div class="filterDiv branding motion">
-        <div class="play-card">
-          <a href="playground-chirpit.html">
-            <img src="images/projects/playground/chirpit/michelle-viet--chirpit-cricket-flour-pasta--branding-packaging-motion-design-cover.jpg" alt="Image 1" />
-            <div class="caption">
-              <h2 class="medlabel">chirpit cricket flour pasta</h2>
-              <p class="smbody">branding / motion / packaging design</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-<!-- 100 -->
-<div class="filterDiv illustration">
-  <div class="play-card">
-    <a href="playground-100project.html">
-      <img src="images/projects/playground/100/michelle-viet--100-project-ideation-illustration.gif" alt="Image 1" />
-      <div class="caption">
-        <h2 class="medlabel">100 annoying little things</h2>
-        <p class="smbody">illustration / ideation</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-      <!-- Pelican -->
-      <div class="filterDiv branding">
-        <div class="play-card">
-          <a href="playground-pelican.html">
-            <img src="images/projects/playground/pelican/michelle-viet--pelican-fish-restaurant-branding-menu-design-menu-cover.gif" alt="Image 1" />
-            <div class="caption">
-              <h2 class="medlabel">pelican</h2>
-              <p class="smbody">branding / layout design / menu design</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-
-
-      <!-- BOOO covid -->
-      <div class="filterDiv illustration">
-        <div class="play-card">
-          <a href="playground-covid.html">
-            <img src="images/projects/playground/editorial/michelleVIET--bctf-covid-the-georgia-straight-editorial-illustration-cover.jpg" alt="Image 1" />
-            <div class="caption">
-              <h2 class="medlabel">editorial illustration</h2>
-              <p class="smbody">illustration</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
       
-    </div>
-    
+      <!-- Play projects section -->
+      <div id="play-section" class="card-container section active">
+        <div class="card">Play Project 1</div>
+        <div class="card">Play Project 2</div>
+        <div class="card">Play Project 3</div>
+        <div class="card">Play Project 4</div>
+        <div class="card">Play Project 5</div>
+        <div class="card">Play Project 6</div>
+        <div class="card">Play Project 7</div>
+        <div class="card">Play Project 8</div>
+      </div>
+      
+      <!-- Freelance projects section -->
+      <div id="freelance-section" class="card-container section">
+        <div class="card">Freelance Project 1</div>
+        <div class="card">Freelance Project 2</div>
+        <div class="card">Freelance Project 3</div>
+        <div class="card">Freelance Project 4</div>
+        <div class="card">Freelance Project 5</div>
+        <div class="card">Freelance Project 6</div>
+        <div class="card">Freelance Project 7</div>
+        <div class="card">Freelance Project 8</div>
+      </div>
+
   </section>
+  
 
   <footer class="footer">
     <div class="footer-text">
