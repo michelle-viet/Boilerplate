@@ -47,3 +47,16 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+//toggle
+
+function toggleProjects() {
+  const toggleSwitch = document.querySelector('.toggle-switch');
+  const playSection = document.getElementById('play-section');
+  const freelanceSection = document.getElementById('freelance-section');
+  
+  // Toggle the active class on the switch and sections
+  toggleSwitch.classList.toggle('active');
+  playSection.classList.toggle('active');
+  freelanceSection.classList.toggle('active');
+}

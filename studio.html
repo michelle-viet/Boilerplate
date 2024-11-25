@@ -43,42 +43,48 @@
 </header>
 
 <body>
-  <div class="play-hero">
-    <h2 class="label">
-      <!-- here i unleash my curiosities and play with design <br> -->
-      a collection of design endeavors beyond my ux work <br> because sometimes, the most exciting discoveries happen when we play 🛝
-    </h2>
-
-
-    <div id="play-filter">
-      <button class="filter-btn active" onclick="filterSelection('all')">
-        all
-      </button>
-      <button class="filter-btn" onclick="filterSelection('motion')">
-        motion
-      </button>
-      <button class="filter-btn" onclick="filterSelection('interactive')">
-        interactive
-      </button>
-      <button class="filter-btn" onclick="filterSelection('illustration')">
-        illustration
-      </button>
-      <button class="filter-btn" onclick="filterSelection('branding')">
-        branding
-      </button>
-    </div>
-  </div>
-
-  <section class="content">
 
     <div class="toggle-container">
         <span class="label">Play</span>
         <div class="toggle-switch" onclick="toggleProjects()"></div>
         <span class="label">Freelance</span>
       </div>
+
+      
+  <section class="content">
       
       <!-- Play projects section -->
       <div id="play-section" class="card-container section active">
+        
+        <div class="play-content">
+            <div class="play-hero">
+              <h2 class="label">
+                <!-- here i unleash my curiosities and play with design <br> -->
+                a collection of design endeavors beyond my ux work <br> because sometimes, the most exciting discoveries happen when we play 🛝
+              </h2>
+          
+          
+              <div id="play-filter">
+                  <button class="filter-btn active" onclick="filterSelection('all')">
+                    all
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('motion')">
+                    motion
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('interactive')">
+                    interactive
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('illustration')">
+                    illustration
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('branding')">
+                    branding
+                  </button>
+                </div>
+              </div>
+          </div>
+          
+          
         <div class="card">Play Project 1</div>
         <div class="card">Play Project 2</div>
         <div class="card">Play Project 3</div>

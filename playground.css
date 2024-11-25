@@ -564,6 +564,102 @@ a.sub-navigation-link:hover {
 }
 
 
+
+
+
+
+
+/*
+studio page
+*/
+/* Toggle container */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Toggle switch style */
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: lightgray;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s;
+}
+
+/* Move toggle to the right when active */
+.toggle-switch.active::before {
+  left: 31px;
+}
+
+/* Labels */
+.label {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Card style */
+.card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 cards per row with 20px gap */
+  background-color: #f3f3f3;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 200px;
+}
+
+/* Responsive layout: 2 columns of 4 cards */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Initially hide sections */
+.section {
+  display: none;
+}
+
+/* Show section when active */
+.section.active {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
