@@ -1,4 +1,3 @@
-
 @import url('make-something-fly.css');
 @import url('animated-gradient.css');
 @import url('text-stroke.css');
@@ -391,10 +390,60 @@ a:active {
       var(--linear-gradient-color-3) 100%);
 }
 
+/* --- TYPE SCALE: NEW SYSTEM --- */
+.heading-xl {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.heading-lg {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.heading-md {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.heading-sm {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.body-lg {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.body-md {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.body-sm {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
-
-
-
+/* Section/Layout Classes */
+.cs-section {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+.cs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.cs-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem;
+}
 
 /*
 ███████╗████████╗██╗   ██╗██╗     ███████╗     ██████╗ ██╗   ██╗██╗██████╗ ███████╗
@@ -648,17 +697,6 @@ studio page
 .section.active {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 
